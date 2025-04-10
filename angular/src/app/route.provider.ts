@@ -24,5 +24,11 @@ function configureRoutes() {
         layout: eLayoutType.application,
         requiredPolicy: 'Bookstore.Books',
       },
+      {
+        path: '/items',
+        name: '::Menu:Items',
+        parentName: '::Menu:BookStore',
+        layout: eLayoutType.application,
+      },
   ]);
 }

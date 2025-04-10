@@ -4,6 +4,7 @@
     "AppName": "Bookstore",
     "Menu:Bookstore": "Book Store",
     "Menu:Books": "Books",
+    "Menu:Items": "Items",
     "Actions": "Actions",
     "Close": "Close",
     "Delete": "Delete",

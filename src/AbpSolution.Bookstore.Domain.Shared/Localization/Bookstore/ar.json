@@ -2,10 +2,10 @@
   "culture": "ar",
   "texts": {
     "AppName": "Bookstore",
-    "Menu:Home": "منزل، بيت",
+    "Menu:Home": "الصفحة الرئيسية، 1",
     "Menu:ContactUs": "اتصل بنا",
     "Menu:ArticleSample": "عينة المادة",
-    "Home": "منزل، بيت",
+    "Home": "الصفحة الرئيسية، 2",
     "Welcome": "مرحبا",
     "LongWelcomeMessage": "مرحبا بكم في التطبيق. هذا مشروع بدء التشغيل يعتمد على إطار عمل برنامج ABP. لمزيد من المعلومات قم بزيارة",
     "Date": "تاريخ",

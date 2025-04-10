@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AbpSolution.Bookstore.Application": {
+      "path": "src/AbpSolution.Bookstore.Application/AbpSolution.Bookstore.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.Application.Tests": {
+      "path": "test/AbpSolution.Bookstore.Application.Tests/AbpSolution.Bookstore.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution.Bookstore.Domain.Shared": {
+      "path": "src/AbpSolution.Bookstore.Domain.Shared/AbpSolution.Bookstore.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.Application.Contracts": {
+      "path": "src/AbpSolution.Bookstore.Application.Contracts/AbpSolution.Bookstore.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.HttpApi": {
+      "path": "src/AbpSolution.Bookstore.HttpApi/AbpSolution.Bookstore.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.HttpApi.Client": {
+      "path": "src/AbpSolution.Bookstore.HttpApi.Client/AbpSolution.Bookstore.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.EntityFrameworkCore.Tests": {
+      "path": "test/AbpSolution.Bookstore.EntityFrameworkCore.Tests/AbpSolution.Bookstore.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution.Bookstore.EntityFrameworkCore": {
+      "path": "src/AbpSolution.Bookstore.EntityFrameworkCore/AbpSolution.Bookstore.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.TestBase": {
+      "path": "test/AbpSolution.Bookstore.TestBase/AbpSolution.Bookstore.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution.Bookstore.Domain.Tests": {
+      "path": "test/AbpSolution.Bookstore.Domain.Tests/AbpSolution.Bookstore.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution.Bookstore.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AbpSolution.Bookstore.HttpApi.Client.ConsoleTestApp/AbpSolution.Bookstore.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AbpSolution.Bookstore.DbMigrator": {
+      "path": "src/AbpSolution.Bookstore.DbMigrator/AbpSolution.Bookstore.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.HttpApi.Host": {
+      "path": "src/AbpSolution.Bookstore.HttpApi.Host/AbpSolution.Bookstore.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "AbpSolution.Bookstore.Domain": {
+      "path": "src/AbpSolution.Bookstore.Domain/AbpSolution.Bookstore.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

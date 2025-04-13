@@ -15,7 +15,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
-using AbpSolution.Bookstore.Items;
+using AbpSolution.Bookstore.SaleItems;
 
 namespace AbpSolution.Bookstore.EntityFrameworkCore;
 
@@ -31,7 +31,7 @@ public class BookstoreDbContext :
 
     public DbSet<Book> Books { get; set; }
 
-    public DbSet<Item> Items { get; set; }
+    public DbSet<SaleItem> SaleItems { get; set; }
 
     #region Entities from the modules
 
@@ -92,9 +92,9 @@ public class BookstoreDbContext :
             b.Property(x => x.Name).IsRequired().HasMaxLength(128);
         });
 
-        builder.Entity<Item>(b =>
+        builder.Entity<SaleItem>(b =>
         {
-            b.ToTable(BookstoreConsts.DbTablePrefix + "Items",
+            b.ToTable(BookstoreConsts.DbTablePrefix + "SaleItems",
                 BookstoreConsts.DbSchema);
             b.ConfigureByConvention(); //auto configure for the base class props
             b.Property(x => x.Name).IsRequired().HasMaxLength(128);

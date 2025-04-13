@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Entities.Auditing;
 
-namespace AbpSolution.Bookstore.Items
+namespace AbpSolution.Bookstore.SaleItems
 {
-    public class Item : AuditedAggregateRoot<Guid>
+    public class SaleItem : AuditedAggregateRoot<Guid>
     {
         public string Name { get; set; }
 
-        public ItemType Type { get; set; }
+        public SaleItemType Type { get; set; }
 
         public DateTime PublishDate { get; set; }
 

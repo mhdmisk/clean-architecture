@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AbpSolution.Bookstore.Books;
-using AbpSolution.Bookstore.Items;
+using AbpSolution.Bookstore.SaleItems;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Repositories;
@@ -12,9 +12,11 @@ public class BookstoreDataSeederContributor
     : IDataSeedContributor, ITransientDependency
 {
     private readonly IRepository<Book, Guid> _bookRepository;
-    private readonly IRepository<Item, Guid> _itemRepository;
+    private readonly IRepository<SaleItem, Guid> _itemRepository;
 
-    public BookstoreDataSeederContributor(IRepository<Book, Guid> bookRepository, IRepository<Item, Guid> itemRepository)
+    public BookstoreDataSeederContributor(
+        IRepository<Book, Guid> bookRepository, 
+        IRepository<SaleItem, Guid> itemRepository)
     {
         _bookRepository = bookRepository;
         _itemRepository = itemRepository;
@@ -50,10 +52,10 @@ public class BookstoreDataSeederContributor
         if (await _itemRepository.GetCountAsync() <= 0)
         {
             await _itemRepository.InsertAsync(
-                new Item
+                new SaleItem
                 {
                     Name = "Item 1999",
-                    Type = ItemType.New,
+                    Type = SaleItemType.New,
                     PublishDate = new DateTime(1999, 9, 9),
                     Price = 19.84f
                 },

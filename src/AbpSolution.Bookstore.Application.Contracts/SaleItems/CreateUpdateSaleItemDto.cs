@@ -1,18 +1,17 @@
 ﻿
-using AbpSolution.Bookstore.Items;
 using System.ComponentModel.DataAnnotations;
 using System;
 
-namespace AbpSolution.Bookstore.Items
+namespace AbpSolution.Bookstore.SaleItems
 {
-    public class CreateUpdateItemDto
+    public class CreateUpdateSaleItemDto
     {
         [Required]
         [StringLength(128)]
         public string Name { get; set; } = string.Empty;
 
         [Required]
-        public ItemType Type { get; set; } = ItemType.New;
+        public SaleItemType Type { get; set; } = SaleItemType.New;
 
         [Required]
         [DataType(DataType.Date)]

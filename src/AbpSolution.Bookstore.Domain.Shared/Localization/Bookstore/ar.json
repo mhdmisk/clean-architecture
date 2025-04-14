@@ -37,6 +37,9 @@
     "Unspecified": "نظام",
     "SeeAllUsers": "رؤية كافة المستخدمين",
     "TakePhoto": "تصوير",
-    "ChoosePhoto": "اختر صورة"
+    "ChoosePhoto": "اختر صورة",
+
+    "Enum:SaleItemType.0": "جديد",
+    "Enum:SaleItemType.1": "مستعمل"
   }
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DditemComponent } from './dditem.component';
+import { SaleItemComponent } from './sale-item.component';
 
-describe('DditemComponent', () => {
-  let component: DditemComponent;
-  let fixture: ComponentFixture<DditemComponent>;
+describe('SaleItemComponent', () => {
+  let component: SaleItemComponent;
+  let fixture: ComponentFixture<SaleItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DditemComponent]
+      declarations: [SaleItemComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DditemComponent);
+    fixture = TestBed.createComponent(SaleItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

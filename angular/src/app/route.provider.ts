@@ -25,9 +25,9 @@ function configureRoutes() {
         requiredPolicy: 'Bookstore.Books',
       },
       {
-        path: '/dditems',
+        path: '/sale-items',
         name: '::Menu:Items',
-        parentName: '::Menu:BookStore',
+        //parentName: '::Menu:BookStore',
         layout: eLayoutType.application,
       },
   ]);

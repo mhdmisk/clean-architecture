@@ -15,6 +15,12 @@ public class BookstorePermissionDefinitionProvider : PermissionDefinitionProvide
         booksPermission.AddChild(BookstorePermissions.Books.Create, L("Permission:Books.Create"));
         booksPermission.AddChild(BookstorePermissions.Books.Edit, L("Permission:Books.Edit"));
         booksPermission.AddChild(BookstorePermissions.Books.Delete, L("Permission:Books.Delete"));
+
+
+        var saleItemsPermission = myGroup.AddPermission(BookstorePermissions.SaleItems.Default, L("Permission:SaleItems"));
+        saleItemsPermission.AddChild(BookstorePermissions.SaleItems.Create, L("Permission:SaleItems.Create"));
+        saleItemsPermission.AddChild(BookstorePermissions.SaleItems.Edit, L("Permission:SaleItems.Edit"));
+        saleItemsPermission.AddChild(BookstorePermissions.SaleItems.Delete, L("Permission:SaleItems.Delete"));
         //Define your own permissions here. Example:
         //myGroup.AddPermission(BookstorePermissions.MyPermission1, L("Permission:MyPermission1"));
     }

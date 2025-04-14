@@ -8,7 +8,13 @@
       </div>
       <div class="text-end col col-md-6">
         <div class="text-lg-end pt-2">
-          <button id="create" class="btn btn-primary" type="button" (click)="createSaleItem()">
+          <button
+            *abpPermission="'Bookstore.SaleItems.Create'"
+            id="create"
+            class="btn btn-primary"
+            type="button"
+            (click)="createSaleItem()"
+          >
             <i class="fa fa-plus me-1"></i>
             <span>{{ '::NewItem' | abpLocalization }}</span>
           </button>
@@ -18,7 +24,7 @@
   </div>
   <div class="card-body">
     <ngx-datatable [rows]="saleItem.items" [count]="saleItem.totalCount" [list]="list" default>
-      <ngx-datatable-column
+      <ngx-datatable-column 
         [name]="'::Actions' | abpLocalization"
         [maxWidth]="150"
         [sortable]="false"
@@ -34,12 +40,20 @@
               <i class="fa fa-cog me-1"></i>{{ '::Actions' | abpLocalization }}
             </button>
             <div ngbDropdownMenu>
-                <button ngbDropdownItem (click)="editSaleItem(row.id)">
-                  {{ '::Edit' | abpLocalization }}
-                </button>
-                <button ngbDropdownItem (click)="deleteSaleItem(row.id)">
-                  {{ '::Delete' | abpLocalization }}
-                </button>
+              <button
+                *abpPermission="'Bookstore.SaleItems.Edit'"
+                ngbDropdownItem
+                (click)="editSaleItem(row.id)"
+              >
+                {{ '::Edit' | abpLocalization }}
+              </button>
+              <button
+                *abpPermission="'Bookstore.SaleItems.Delete'"
+                ngbDropdownItem
+                (click)="deleteSaleItem(row.id)"
+              >
+                {{ '::Delete' | abpLocalization }}
+              </button>
             </div>
           </div>
         </ng-template>
@@ -66,7 +80,7 @@
 
 <abp-modal [(visible)]="isModalOpen">
   <ng-template #abpHeader>
-    <h3>{{ (selectedItem.id ? '::Edit' : '::NewItem' ) | abpLocalization }}</h3>
+    <h3>{{ (selectedItem.id ? '::Edit' : '::NewItem') | abpLocalization }}</h3>
   </ng-template>
 
   <ng-template #abpBody>

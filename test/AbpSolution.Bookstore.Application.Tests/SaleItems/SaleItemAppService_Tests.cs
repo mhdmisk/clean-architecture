@@ -6,6 +6,7 @@ using Xunit;
 
 namespace AbpSolution.Bookstore.SaleItems
 {
+    //not working
     //public class SaleItemAppService_Tests<TStartupModule> : BookstoreApplicationTestBase<TStartupModule>
     //    where TStartupModule : IAbpModule
     //{

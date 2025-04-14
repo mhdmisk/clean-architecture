@@ -29,6 +29,7 @@ function configureRoutes() {
         name: '::Menu:Items',
         //parentName: '::Menu:BookStore',
         layout: eLayoutType.application,
+        requiredPolicy: 'Bookstore.SaleItems',
       },
   ]);
 }

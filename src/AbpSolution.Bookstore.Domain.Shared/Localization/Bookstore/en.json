@@ -28,11 +28,16 @@
     "Enum:BookType.6": "Science",
     "Enum:BookType.7": "Science fiction",
     "Enum:BookType.8": "Poetry",
+
     "Permission:Bookstore": "Book Store",
     "Permission:Books": "Book Management",
     "Permission:Books.Create": "Creating new books",
     "Permission:Books.Edit": "Editing the books",
     "Permission:Books.Delete": "Deleting the books",
+    "Permission:SaleItems": "Sale Item Management",
+    "Permission:SaleItems.Create": "Creating new sale items",
+    "Permission:SaleItems.Edit": "Editing the sale items",
+    "Permission:SaleItems.Delete": "Deleting the sale items",
 
     "Enum:SaleItemType.0": "New",
     "Enum:SaleItemType.1": "Used",
